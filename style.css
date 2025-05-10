@@ -1,0 +1,563 @@
+:root
+{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --background-color: #f0f0f0;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px 40px 25px;
+}
+
+header nav ul
+{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+header nav ul a
+{
+    text-decoration: none;
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header nav ul a:hover
+{
+    color: #000000;
+}
+
+.home
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-title
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.home-buttons
+{
+    display: flex;
+    gap: 20px;
+}
+
+#home-button1
+{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#home-button1:hover
+{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+#home-button2
+{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#home-button2:hover
+{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#home-img
+{
+    width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.home-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.home-description
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.hd-activities
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.hd-act-img img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.hd-act-text h3
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.hd-act-text p
+{
+    font-size: 22px;
+    font-weight: 400;
+    color: #808080;
+}
+
+
+
+
+/* About section */
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.about-title
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 110px;
+    margin: 50px;
+}
+
+.about-content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-content img
+{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+figure 
+{
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+figure > * 
+{
+    grid-area: 1/1;
+    transition: .4s;
+}
+
+figure figcaption 
+{
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: .75rem;
+    background: var(--c,rgba(29, 29, 29, 0.555));
+    clip-path: inset(0 var(--_i,100%) 0 0);
+}
+
+figure:hover figcaption
+{
+    --_i: 0%;
+}
+
+figure:hover img 
+{
+    transform: scale(1.2);
+}
+
+.about-img.up 
+{
+    transform: translateY(-60px);
+}
+
+
+
+
+/* Services Section */
+
+.features-title h1
+{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.features-content
+{
+    display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+    padding: 0 150px;
+}
+        
+.fc
+{
+    background-color: #e2e2e288;
+    height: 350px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+.fc h1
+{
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.fc p
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: #808080;
+    text-align: center;
+}
+
+
+
+
+/* Services */
+
+#Services
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.services-top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0px 100px 50px;
+}
+
+.stl-title h1
+{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.stl-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stlc
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stlc h1
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.stlc p
+{
+    font-size: 22px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.s-top-right img
+{
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#strcimg1
+{
+    width: 350px;
+    height: 350px;
+    transform: translate(420px, -100px);
+}
+
+#strcimg2
+{
+    width: 300px;
+    height: 300px;
+    transform: translate(-120px, 180px);
+}
+
+#strcimg3
+{
+    width: 250px;
+    height: 250px;
+    transform: translate(-70px, 150px);
+}
+
+.services-bottom
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 120px;
+    gap: 10px;
+}
+
+#stlimg
+{
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.s-bottom-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.s-bottom-right h1
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.s-bottom-right p
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: #808080;
+}
+
+
+
+/* Footer */
+.footer-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    background-color: #e2e2e288;
+}
+
+.footer-top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.ft-left h1
+{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.ft-middle
+{
+    display: flex;
+    gap: 30px;
+}
+
+.line
+{
+    width: 2px;
+    height: 180px;
+    background-color: #a3a3a3;
+}
+
+.ft-middle img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.ft-right
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ftr-text
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.ftr-input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ftr-input input
+{
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #808080;
+    border: none;
+}
+
+#ftr-button
+{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign
+{
+    background-color: #e2e2e288;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+
+.sign-content h1
+{
+    font-size: 70px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.sign-content p
+{
+    font-size: 26px;
+    font-weight: 400;
+    color: #808080;
+}
